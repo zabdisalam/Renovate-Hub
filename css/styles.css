@@ -2,9 +2,214 @@
     height: 100vh;
     width: 100vw;
     object-fit: cover;
-    filter: brightness(0.6);
+    filter: brightness(0.7);
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 75% 65%, 0 100%);
 }
+
+
+@media screen and (max-width: 992px) { /* This can be any pixel value of your choice that represents desktop displays */
+    .bg-img {
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0 100%);
+        height: 90vh;
+    }
+}
+
+body {
+    background: rgb(220, 220, 220) !important;
+}
+
+.navbar-nav .nav-link {
+    font-weight: bold;
+    color: #FFF;
+    font-size: 1.7em; /* Adjust this value to increase or decrease the text size */
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.nav-logo {
+    object-fit: contain;
+    height: 80px;
+    width: auto;
+}
+
+.brand-name {
+    margin-left: 10px;
+    align-self: center;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 1.8em;
+}
+
+.slogan-container {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+    font-family: 'Saira Condensed', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  /* Add a little shadow for better readability */
+}
+
+.slogan {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.book-btn {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 20px 40px;
+}
+
+.slogan-container .book-btn {
+    font-size: 2rem; /* Adjust as necessary */
+}
+
+.slogan-container .slogan {
+    font-size: 3rem; /* Adjust as necessary */
+    margin-bottom: 1rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3em !important;
+    -webkit-text-stroke: 2.5px rgb(195, 176, 153);
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+.services {
+    padding-top: 90vh;
+    text-align: center;
+    padding-left: 100%;
+}
+
+h3 {
+color: #8B7F70 !important;
+}
+
+#locations {
+    padding: 10em 0;
+}
+
+#locations .container {
+    margin: 0 auto;
+}
+
+#locations h2 {
+    color: rgb(195, 176, 153) !important;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 3em;
+}
+
+#locations .info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+
+#locations .info-item i {
+margin-right: 0.5em;
+color: #333;
+}
+
+.company-info {
+    margin-bottom: 5em;
+}
+
+.company-info p {
+    margin: 0 !important;
+}
+
+
+#locations .opening-hours h3 {
+margin-top: 1em;
+}
+.footer {
+    background-color: #C3B099 !important;
+    width: 1440px !important;
+    height: 309px !important;
+    color: #FFFFFF !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 0 50px !important;
+    box-sizing: border-box !important;
+  }
+  
+  .footer .footer-item {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+  }
+  
+  .footer .questions h1 span {
+    color: white !important;
+  }
+  
+  .footer .contact-us {
+    width: 200px !important;
+    height: 60px !important;
+    background-color: #FFFFFF !important;
+    color: #C3B099 !important;
+    border: none !important;
+    border-radius: 10px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    font-size: 18px !important;
+    cursor: pointer !important;
+  }
+  
+  .footer .details {
+    font-size: 18px !important;
+  }
+  
+  .footer .details i {
+    margin-right: 10px !important;
+  }
+  
+  .footer .social-media {
+    display: flex !important;
+    justify-content: space-between !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  
+  .footer .social-media-icons {
+    display: flex !important;
+    justify-content: space-between !important;
+    width: 150px !important;
+  }
+  
+  .footer .social-media-icons a {
+    color: #FFFFFF !important;
+  }
+  
+  .footer .policy {
+    display: flex !important;
+    justify-content: space-between !important;
+    width: 300px !important;
+  }
+  
+  .footer .policy a {
+    color: #FFFFFF !important;
+    text-decoration: none !important;
+  }
+
+  .footer-wrapper {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+  
