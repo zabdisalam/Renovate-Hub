@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+
+    <script type="importmap">
+        {
+            "imports": {
+            "three": "https://unpkg.com/three@<version>/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@<version>/examples/jsm/"
+            }
+        }
+    </script>
+    <title>RHub</title>
+</head>
+
+<body>
+    <nav class="fixed-top navbar navbar-expand-lg" data-bs-theme="light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="nav-logo" src="img/zyro-image.png" alt="Your Brand">
+                <span class="brand-name">Renovate Hub</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./AboutUs.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./Architects.html">Architects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Book.html" class="btn btn-primary book-btn">Book Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="aboutus-header">
+        <div class="aboutus">ARCHITECTS</div>
+    </div>
+    <img class="bg-img"
+        src="https://images.unsplash.com/photo-1571666521805-f5e8423aba9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
+        alt="Bg image" class="img-fluid">
+
+    <div class="container us">
+        <h1>Our Services</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-5">
+                <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                    <div class="card-body">
+                        <h4 class="card-title text-center m-4">Architect John Doe</h4>
+                        <div class="mb-4">
+                            <img class="image-size"
+                                src="https://images.unsplash.com/photo-1510944619855-ad2d9fa46e7d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2832&q=80"
+                                alt="Architect 1 Image">
+                        </div>
+                        <p class="card-text">Specialist in transforming spaces into functional & stylish environments. Known for Kitchen Renovation and Room Makeovers.</p>
+                        <a href="#" class="card-link mt-auto">Book Now</a>
+                        <a href="#" class="card-link">Services</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                    <div class="card-body">
+                        <h4 class="card-title text-center m-4">Architect Jane Smith</h4>
+                        <div class="mb-4">
+                            <img class="image-size"
+                                src="https://plus.unsplash.com/premium_photo-1661664754689-ac15147a2300?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2342&q=80"
+                                alt="Architect 2 Image">
+                        </div>
+                        <p class="card-text">Expert in creating thematic spaces and layouts. Renowned for Bathroom Remodel and Custom Furniture Design.</p>
+                        <a href="#" class="card-link mt-auto">Book Now</a>
+                        <a href="#" class="card-link">Services</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                    <div class="card-body">
+                        <h4 class="card-title text-center m-4">Architect Robert Brown</h4>
+                        <div class="mb-4">
+                            <img class="image-size"
+                                src="https://images.unsplash.com/photo-1662447176130-60356c625453?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
+                                alt="Architect 3 Image">
+                        </div>
+                        <p class="card-text">Specializes in fixture and floor solutions. Notable for Lighting Design and Window Treatments.</p>
+                        <a href="#" class="card-link mt-auto">Book Now</a>
+                        <a href="#" class="card-link">Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-5">
+                <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                    <div class="card-body">
+                        <h4 class="card-title text-center m-4">Architect Emily Davis</h4>
+                        <div class="mb-4">
+                            <img class="image-size"
+                                src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2338&q=80"
+                                alt="Architect 4 Image">
+                        </div>
+                        <p class="card-text">Known for her eclectic and innovative designs. Renowned for Room Makeovers and Custom Furniture Design.</p>
+                        <a href="#" class="card-link mt-auto">Book Now</a>
+                        <a href="#" class="card-link">Services</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                    <div class="card-body">
+                        <h4 class="card-title text-center m-4">Architect Oliver Taylor</h4>
+                        <div class="mb-4">
+                            <img class="image-size"
+                                src="https://plus.unsplash.com/premium_photo-1664301183594-03188b856b16?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
+                                alt="Architect 5 Image">
+                        </div>
+                        <p class="card-text">Expert in integrating modern architecture with natural elements. Known for Kitchen Renovation and Bathroom Remodel.</p>
+                        <a href="#" class="card-link mt-auto">Book Now</a>
+                        <a href="#" class="card-link">Services</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                    <div class="card-body">
+                        <h4 class="card-title text-center m-4">Architect Charlotte Anderson</h4>
+                        <div class="mb-4">
+                            <img class="image-size"
+                                src="https://images.unsplash.com/photo-1672748341520-6a839e6c05bb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80"
+                                alt="Architect 6 Image">
+                        </div>
+                        <p class="card-text">Specializes in sustainable and energy-efficient designs. Famous for Lighting Design and Window Treatments.</p>
+                        <a href="#" class="card-link mt-auto">Book Now</a>
+                        <a href="#" class="card-link">Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+</div>
+
+    <div class="footer-wrapper">
+        <div class="container-fluid d-flex justify-content-around align-items-center"
+            style="background-color: #C3B099; width: 100%; height: 309px; padding: 0;">
+            <footer class="footer">
+                <div class="footer-item questions">
+                    <h1>DO YOU HAVE SOME <span>QUESTIONS</span></h1>
+                    <button class="contact-us">CONTACT US</button>
+                </div>
+                <div class="footer-item details">
+                    <p><i class="fas fa-map-marker-alt"></i>75 Laurier Ave E, Ottawa, ON K1N 6N5</p>
+                    <p><i class="fas fa-phone"></i>1-800-908-809</p>
+                    <p><i class="fas fa-envelope"></i>owner@rhub.ca</p>
+                </div>
+                <div class="footer-item social-media">
+                    <div class="social-media-icons mb-5">
+                        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="policy">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms and Conditions</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script>
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop() > 50) {
+                $(".navbar").css("background", "linear-gradient(to right, rgba(195, 176, 153, 1), rgba(195, 176, 153, 1))");
+            } else {
+                $(".navbar").css("background", "linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0))");
+            }
+        });
+    </script>
+
+</body>
+
+</html>
