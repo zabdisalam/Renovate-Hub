@@ -80,7 +80,7 @@ body {
     font-weight: bold;
 }
 
-h1 {
+.services h1 {
     font-size: 3em !important;
     -webkit-text-stroke: 2.5px rgb(195, 176, 153);
     font-family: 'Saira Condensed', sans-serif;
@@ -145,6 +145,11 @@ margin-top: 1em;
     padding: 0 50px !important;
     box-sizing: border-box !important;
   }
+
+  .footer h1 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 3em !important;
+  } 
   
   .footer .footer-item {
     display: flex !important;
@@ -159,8 +164,8 @@ margin-top: 1em;
   .footer .contact-us {
     width: 200px !important;
     height: 60px !important;
-    background-color: #FFFFFF !important;
-    color: #C3B099 !important;
+    background-color: #442905 !important;
+    color: #FFFF !important;
     border: none !important;
     border-radius: 10px !important;
     display: flex !important;
@@ -212,4 +217,26 @@ margin-top: 1em;
     margin: 0;
 }
 
-  
+
+.aboutus-header {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+    font-family: 'Saira Condensed', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  /* Add a little shadow for better readability */
+}
+
+.aboutus {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+.aboutus-header .aboutus {
+    font-size: 5rem; /* Adjust as necessary */
+    margin-bottom: 1rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
