@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+
+    <script type="importmap">
+            {
+                "imports": {
+                "three": "https://unpkg.com/three@<version>/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@<version>/examples/jsm/"
+                }
+            }
+        </script>
+    <title>RHub</title>
+</head>
+
+<body>
+    <nav class="fixed-top navbar navbar-expand-lg" data-bs-theme="light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="nav-logo" src="img/zyro-image.png" alt="Your Brand">
+                <span class="brand-name">Renovate Hub</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./AboutUs.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Architects.html">Architects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Book.html" class="btn btn-primary book-btn">Book Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="aboutus-header">
+        <div class="aboutus">BOOKING CONFIRMED</div>
+    </div>
+    <img class="bg-img"
+        src="https://images.unsplash.com/photo-1567030849710-a50bbc3e16c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
+        alt="Bg image" class="img-fluid">
+
+    <div class="container us m-5" style="margin-top: 3em !important;">
+        <h1>Your booking has been confirmed!!</h1>
+        <h3>You’re booking has been cofirmed, please check your email, for real-time updates on the status of your
+            booking</h3>
+    </div>
+    <div class="d-flex align-items-center">
+        <iframe class="mx-auto" style="width: 700px; height: 700px;"
+            src="https://embed.lottiefiles.com/animation/95029"></iframe>
+    </div>
+    <!-- display all the information that was generated in the onload function at the bottom of the page -->
+    <div class="container py-5">
+        <div class="card mx-auto" style="width: 30rem;">
+            <div class="card-body">
+                <h5 class="card-title text-center">Booking Information</h5>
+                <p class="card-text"><strong>Full Name:</strong> <span id="fullNameDisplay"></span></p>
+                <p class="card-text"><strong>Address:</strong> <span id="addressDisplay"></span></p>
+                <p class="card-text"><strong>Email:</strong> <span id="emailDisplay"></span></p>
+                <p class="card-text"><strong>Phone Number:</strong> <span id="phoneDisplay"></span></p>
+                <p class="card-text"><strong>Start Date:</strong> <span id="startDateDisplay"></span></p>
+                <p class="card-text"><strong>Service:</strong> <span id="serviceDisplay"></span></p>
+                <p class="card-text"><strong>Booking Number:</strong> <span id="bookingNumberDisplay"></span></p>
+            </div>
+        </div>
+    </div>    
+    <div class="footer-wrapper">
+        <div class="container-fluid d-flex justify-content-around align-items-center"
+            style="background-color: #C3B099; width: 100%; height: 309px; padding: 0;">
+            <footer class="footer">
+                <div class="footer-item questions">
+                    <h1>DO YOU HAVE SOME <span>QUESTIONS</span></h1>
+                    <button class="contact-us">CONTACT US</button>
+                </div>
+                <div class="footer-item details">
+                    <p><i class="fas fa-map-marker-alt"></i>75 Laurier Ave E, Ottawa, ON K1N 6N5</p>
+                    <p><i class="fas fa-phone"></i>1-800-908-809</p>
+                    <p><i class="fas fa-envelope"></i>owner@rhub.ca</p>
+                </div>
+                <div class="footer-item social-media">
+                    <div class="social-media-icons mb-5">
+                        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="policy">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms and Conditions</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script>
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop() > 50) {
+                $(".navbar").css("background", "linear-gradient(to right, rgba(195, 176, 153, 1), rgba(195, 176, 153, 1))");
+            } else {
+                $(".navbar").css("background", "linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0))");
+            }
+        });
+    </script>
+
+</body>
+<script>
+    window.onload = function () {
+    const formData = JSON.parse(localStorage.getItem('formData'));
+
+    // display form data
+    document.getElementById('fullNameDisplay').innerText = formData.fullName;
+    document.getElementById('addressDisplay').innerText = formData.address;
+    document.getElementById('emailDisplay').innerText = formData.email;
+    document.getElementById('phoneDisplay').innerText = formData.phone;
+    document.getElementById('startDateDisplay').innerText = formData.startDate;
+    document.getElementById('serviceDisplay').innerText = formData.service;
+
+    const section1 = Math.floor(Math.random() * 1000).toString().padStart(3, '0'); // Generates a number between 000 and 999
+    const section2 = Math.floor(Math.random() * 10000).toString().padStart(4, '0'); // Generates a number between 0000 and 9999
+    const section3 = Math.floor(Math.random() * 1000).toString().padStart(3, '0'); // Generates a number between 000 and 999
+
+    const bookingNumber = section1 + "-" + section2 + "-" + section3;
+    document.getElementById('bookingNumberDisplay').innerText = bookingNumber;
+};
+
+</script>
+
+</html>

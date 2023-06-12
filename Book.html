@@ -1,0 +1,196 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper.js, and Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- jQuery UI for datepicker -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $(".datepicker").datepicker();
+        });
+        function submitForm(event) {
+            event.preventDefault();
+
+            const fullName = document.getElementById('fullName').value;
+            const address = document.getElementById('address').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const startDate = document.getElementById('startDate').value;
+            const service = document.getElementById('service').value;
+
+            const formData = {
+                fullName,
+                address,
+                email,
+                phone,
+                startDate,
+                service
+            };
+
+            localStorage.setItem('formData', JSON.stringify(formData));
+
+            window.location.href = './Success.html'; // replace with your new website URL
+        }
+    </script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap" rel="stylesheet">
+
+    <!-- Custom JS -->
+    <!-- <script type="module" src="./js/main.js"></script> -->
+
+    <script type="importmap">
+        {
+            "imports": {
+            "three": "https://unpkg.com/three@<version>/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@<version>/examples/jsm/"
+            }
+        }
+    </script>
+    <title>RHub</title>
+</head>
+
+<body>
+    <nav class="fixed-top navbar navbar-expand-lg" data-bs-theme="light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="nav-logo" src="img/zyro-image.png" alt="Your Brand">
+                <span class="brand-name">Renovate Hub</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./AboutUs.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Architects.html">Architects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Book.html" class="btn btn-primary book-btn">Book Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="aboutus-header">
+        <div class="aboutus">BOOKING</div>
+    </div>
+    <img class="bg-img"
+        src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
+        alt="Bg image" class="img-fluid">
+
+    <div class="container us">
+        <h1>Book Now</h1>
+    </div>
+    <div class="container">
+        <h2 class="text-center">Booking</h2>
+        <div class="form-container">
+            <form onsubmit="submitForm(event)">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" class="form-control" id="fullName" placeholder="Enter full name">
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" class="form-control" id="address" placeholder="1234 Main St">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="123-456-7890">
+                </div>
+                <div class="form-group">
+                    <label for="startDate">Start Date</label>
+                    <input type="text" class="form-control datepicker" id="startDate">
+                </div>
+                <div class="form-group">
+                    <label for="service">Service</label>
+                    <select class="form-control" id="service">
+                        <option value="">Please select...</option>
+                        <option value="Kitchen Renovation">Kitchen Renovation</option>
+                        <option value="Room Makeovers">Room Makeovers</option>
+                        <option value="Bathroom Remodel">Bathroom Remodel</option>
+                        <option value="Customized Furniture Design">Customized Furniture Design</option>
+                        <option value="Lighting Design">Lighting Design</option>
+                        <option value="Window Treatments">Window Treatments</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    </div>
+    <div class="footer-wrapper">
+        <div class="container-fluid d-flex justify-content-around align-items-center"
+            style="background-color: #C3B099; width: 100%; height: 309px; padding: 0;">
+            <footer class="footer">
+                <div class="footer-item questions">
+                    <h1>DO YOU HAVE SOME <span>QUESTIONS</span></h1>
+                    <button class="contact-us">CONTACT US</button>
+                </div>
+                <div class="footer-item details">
+                    <p><i class="fas fa-map-marker-alt"></i>75 Laurier Ave E, Ottawa, ON K1N 6N5</p>
+                    <p><i class="fas fa-phone"></i>1-800-908-809</p>
+                    <p><i class="fas fa-envelope"></i>owner@rhub.ca</p>
+                </div>
+                <div class="footer-item social-media">
+                    <div class="social-media-icons mb-5">
+                        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="policy">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms and Conditions</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script>
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop() > 50) {
+                $(".navbar").css("background", "linear-gradient(to right, rgba(195, 176, 153, 1), rgba(195, 176, 153, 1))");
+            } else {
+                $(".navbar").css("background", "linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0))");
+            }
+        });
+    </script>
+
+</body>
+
+</html>

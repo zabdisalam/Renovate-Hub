@@ -263,3 +263,43 @@ margin-top: 1em;
 .card {
     height: 500px !important;
 }
+
+.ui-datepicker {
+    background: white;
+    padding: 10px;
+}
+
+.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all {
+    background: white !important;
+    padding: 10px !important;
+}
+
+.form-container {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    border-radius: 37px;
+}
+
+.btn-submit {
+    background-color: #8B7F70 !important;;
+    color: white;
+    margin-bottom: 50px;
+    font-size: 20px;
+    border-radius: 37px;
+    width: 100%;
+}
+
+.container .text-center {
+    font-size: 3em !important;
+    -webkit-text-stroke: 2.5px rgb(195, 176, 153);
+    font-family: 'Saira Condensed', sans-serif;
+    margin-bottom: 1.2em;
+}
